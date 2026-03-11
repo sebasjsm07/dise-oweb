@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SERVICIOS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-300">
 
     <!-- ejercicio para alumnos (15min):
     crea una estructura, abrela en el navegador,
@@ -14,12 +15,12 @@
 
     <!-- encabezado:aqui empieza la semantica -->
     <header>
-        <div>
-            <h1>Empresa</h1>
-            <nav> 
-            <a href="#inicio">inicio</a>
-            <a href="servicios">servicio</a>
-            <a href="contacto">Contacto</a>
+        <div class="bg-gray-200 text-center p-2 m-4 border-2 border-gray-500  ">
+            <h1 class="text-4xl mb-6 text-sky-500">Empresa</h1>
+            <nav class="flex justify-around mb-4 "> 
+            <a class="border-2 border-gray-500" href="#inicio">inicio</a>
+            <a class="border-2 border-gray-500" href="servicios">servicio</a>
+            <a class="border-2 border-gray-500" href="contacto">Contacto</a>
             </nav>
         </div>
     </header>
@@ -30,44 +31,51 @@
 
 
     <!-- seccion agrupa contenido tematico -->
-<section id="inicio">
-    <h2>Bienvenidos</h2>
-    <p>Somos una empresa dedicada a crear soluciones digitales</p>
-    <button>Ver mas</button>
-    <button>Contactar</button>
+<section class="bg-gray-100 p-10 m-4 "  id="inicio">
+    <h1 class="text-5xl text-center mb-6 text-sky-500 ">WELCOME</h1>
+    <p class="text-xl text-gray-500 mb-7 text-center">Somos una empresa dedicada a crear soluciones digitales</p>
+   <div class="flex justify-around ">
+    <button class="border-4 border-gray-300 p-2">Ver mas</button>
+    <button class="border-4 border-gray-300 p-2" >Contactar</button>
+     </div>
 </section>
 
 <!-- seccion de servicios -->
-<section id="servicios">
-<h2>Nuestros servicios</h2>
+<section class="bg-gray-100 p-10 m-4" id="servicios">
+<h2 class="text-4xl text-center text-sky-500 mb-6">Nuestros servicios</h2>
 
 
 <!-- articulo:contenido independiente y reutilizable -->
-<article>
+ <div class="flex justify-around">
+<article >
 <h3>Diseños web</h3>
-<p>Creamos sitios modernos y funcionales</p>
+<p class="text-xs">Creamos sitios modernos y funcionales</p>
 </article>
 
 <article>
 <h3>Desarrollo</h3>
-<p>Programamos aplicaciones a medida</p>
+<p class="text-xs">Programamos aplicaciones a medida</p>
 </article>
 
 <article>
 <h3>Marketing</h3>
-<p>Aumentamos tu prescencia digital</p>
+<p class="text-xs">Aumentamos tu prescencia digital</p>
 </article>
+</div>
 </section>
 
         <!-- SECCIÓN DE CONTACTO -->
-        <section id="contacto">
-            <h2>Contacto</h2>
+        <section class=" flex justify-around bg-gray-100 p-10 m-4 border-2 border-gray-500" id="contacto">
+           <img class="h-40" src="assets/images.png" alt="">
+           
+           
             <form>
                 <div>
+                    <h2 >Contacto</h2>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" placeholder="Tu nombre">
                 </div>
-                <div>
+              <div>
                     <label for="email">Email:</label>
                     <input type="email" id="email" placeholder="tu@email.com">
                 </div>
